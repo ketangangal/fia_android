@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data />
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/name"
+                android:gravity="center"
+                android:text="SIGNUP"
+                android:id="@+id/label"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter your name"
+                android:id="@+id/name"
+                app:layout_constraintTop_toBottomOf="@id/label"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter your Email"
+                android:id="@+id/email"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter your Password"
+                android:id="@+id/password"
+                app:layout_constraintTop_toBottomOf="@id/email"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Confirm your password"
+                android:id="@+id/confPassword"
+                app:layout_constraintTop_toBottomOf="@id/password"
+                />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Enter your phone number"
+                android:id="@+id/phone"
+                app:layout_constraintTop_toBottomOf="@id/confPassword"
+                />
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:layout_constraintTop_toBottomOf="@id/phone"
+                android:text="Signup"
+                android:id="@+id/signup"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
